@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kirim Liputan & Kontak - Always Life</title>
+</head>
+<body>
+
+    <!-- Header Utama -->
+    <header>
+        <h1>Always Life</h1>
+        <p>Portal Informasi, Berita, dan Kegiatan Mahasiswa Institut Teknologi PLN</p>
+    </header>
+
+    <!-- Navigasi Utama -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="artikel.html">Berita & Kegiatan</a></li>
+            <li><a href="kontak.html">Kirim Liputan / Kontak</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Konten Utama -->
+    <main>
+        <section>
+            <h2>Form Pengajuan Berita & Kontributor Kegiatan</h2>
+            <p>Punya berita atau kegiatan organisasi yang ingin dipublikasikan di <strong>Always Life</strong>? Silakan isi formulir di bawah ini:</p>
+
+            <form action="#" method="POST">
+                <!-- Input Teks: Nama Pelapor -->
+                <p>
+                    <label for="nama_pelapor">Nama Lengkap Mahasiswa:</label><br>
+                    <input type="text" id="nama_pelapor" name="nama_pelapor" placeholder="Masukkan nama lengkap" required>
+                </p>
+
+                <!-- Input Text / NIM -->
+                <p>
+                    <label for="nim_pelapor">NIM (Nomor Induk Mahasiswa):</label><br>
+                    <input type="text" id="nim_pelapor" name="nim_pelapor" placeholder="Contoh: 202532069" required>
+                </p>
+
+                <!-- Input Email -->
+                <p>
+                    <label for="email_pelapor">Email Student / Pribadi:</label><br>
+                    <input type="email" id="email_pelapor" name="email_pelapor" placeholder="email@itpln.ac.id" required>
+                </p>
+
+                <!-- Input Radio: Status / Peran -->
+                <p>
+                    <label>Status Kontributor:</label><br>
+                    <input type="radio" id="status_pengurus" name="status" value="Pengurus Ormawa" required>
+                    <label for="status_pengurus">Panitia</label><br>
+                    
+                    <input type="radio" id="status_mahasiswa" name="status" value="Mahasiswa Umum">
+                    <label for="status_mahasiswa">Mahasiswa Umum</label>
+
+                    <input type="radio" id="status_dosen" name="status" value="Dosen">
+                    <label for="status_dosen">Dosen</label>
+                </p>
+
+                <!-- Input Checkbox: Kategori Berita -->
+                <p>
+                    <label>Kategori Berita / Liputan:</label><br>
+                    <input type="checkbox" id="kat_akademik" name="kategori[]" value="Akademik">
+                    <label for="kat_akademik">Akademik & Seminar</label><br>
+                    
+                    <input type="checkbox" id="kat_ormawa" name="kategori[]" value="Ormawa">
+                    <label for="kat_ormawa">Kegiatan Ormawa / UKM</label><br>
+
+                    <input type="checkbox" id="kat_prestasi" name="kategori[]" value="Prestasi">
+                    <label for="kat_prestasi">Prestasi & Lomba Mahasiswa</label>
+                </p>
+
+                <!-- Textarea: Isi Berita -->
+                <p>
+                    <label for="ringkasan_berita">Ringkasan Berita / Pesan:</label><br>
+                    <textarea id="ringkasan_berita" name="ringkasan_berita" rows="5" cols="40" placeholder="Tuliskan rincian kegiatan atau informasi yang ingin dipublikasikan..." required></textarea>
+                </p>
+
+                <!-- Submit Button -->
+                <p>
+                    <button type="submit">Kirim Berita</button>
+                    <button type="reset">Batal / Reset</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Always Life ITPLN - Dikelola oleh Muhammad Fikri Azka Ramadhan (NIM: 202532069)</p>
+    </footer>
+
+</body>
+</html>
